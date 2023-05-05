@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct 23 14:14:46 2021
+# Process ID: 25580
+# Current directory: D:/Vivado/2018.3/myworkplace/cjm_fa_useip/cjm_fa_useip.runs/impl_1
+# Command line: vivado.exe -log cjm_fa_useip.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cjm_fa_useip.tcl -notrace
+# Log file: D:/Vivado/2018.3/myworkplace/cjm_fa_useip/cjm_fa_useip.runs/impl_1/cjm_fa_useip.vdi
+# Journal file: D:/Vivado/2018.3/myworkplace/cjm_fa_useip/cjm_fa_useip.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cjm_fa_useip.tcl -notrace

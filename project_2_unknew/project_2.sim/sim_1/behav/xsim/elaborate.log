@@ -1,0 +1,23 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1a913eecfcb847709b2962d85d9803f6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_electronic_coded_lock_behav xil_defaultlib.sim_electronic_coded_lock xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'Num3' [D:/Vivado/2018.3/myworkplace/project_2_unknew/project_2.srcs/sim_1/new/sim_electronic_coded_lock.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.status_change
+Compiling module xil_defaultlib.digit_change
+Compiling module xil_defaultlib.password_change
+Compiling module xil_defaultlib.check
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.status_yog
+Compiling module xil_defaultlib.users_input
+Compiling module xil_defaultlib.seg_div
+Compiling module xil_defaultlib.seg_visual
+Compiling module xil_defaultlib.electronic_coded_lock
+Compiling module xil_defaultlib.sim_electronic_coded_lock
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_electronic_coded_lock_behav

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/b_j_q/bjq.srcs/sources_1/new/bjq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bjq
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/b_j_q/bjq.srcs/sim_1/new/sim_bjq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_bjq
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/b_j_q/bjq.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

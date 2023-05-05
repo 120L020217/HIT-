@@ -1,0 +1,10 @@
+set_property SRC_FILE_INFO {cfile:d:/Vivado/2018.3/myworkplace/Vivado/2018.3/myworkplace/halfadder/halfadder.srcs/constrs_1/new/con_halfadder.xdc rfile:../../../../Vivado/2018.3/myworkplace/halfadder/halfadder.srcs/constrs_1/new/con_halfadder.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+current_instance inst
+set_property src_info {type:SCOPED_XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M4 [get_ports ain]
+set_property src_info {type:SCOPED_XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N4 [get_ports bin]
+set_property src_info {type:SCOPED_XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J3 [get_ports cout]
+set_property src_info {type:SCOPED_XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J2 [get_ports sum]

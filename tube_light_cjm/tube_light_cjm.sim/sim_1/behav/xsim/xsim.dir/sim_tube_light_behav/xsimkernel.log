@@ -1,0 +1,7 @@
+Running: xsim.dir/sim_tube_light_behav/xsimk.exe -simmode gui -wdb sim_tube_light_behav.wdb -simrunnum 0 -socket 62241
+Design successfully loaded
+Design Loading Memory Usage: 5812 KB (Peak: 5812 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 14424 KB (Peak: 14424 KB)
+Simulation CPU Usage: 1686 ms

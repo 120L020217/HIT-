@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-3" LaunchTime="1636695293">
+  <File Type="BITSTR-BMM" Name="tube_light_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="tube_light_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="tube_light_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="tube_light_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="tube_light.tcl"/>
+  <File Type="OPT-TIMING" Name="tube_light_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="tube_light_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="tube_light_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="tube_light_reports.tcl"/>
+  <File Type="OPT-DRC" Name="tube_light_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="tube_light.hwdef"/>
+  <File Type="PWROPT-DCP" Name="tube_light_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="tube_light_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="tube_light_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="tube_light_placed.dcp"/>
+  <File Type="PLACE-IO" Name="tube_light_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tube_light_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="tube_light_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tube_light_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="tube_light_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="tube_light_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tube_light_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="tube_light.bgn"/>
+  <File Type="PLACE-TIMING" Name="tube_light_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tube_light_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="tube_light.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="tube_light_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="tube_light_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="tube_light_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="tube_light.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="tube_light_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="tube_light_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="tube_light_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tube_light_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="tube_light_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="tube_light_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="tube_light.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="tube_light_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="tube_light.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tube_light_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tube_light_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="tube_light.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tube_light_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="tube_light_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="tube_light_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tube_light_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tube_light_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="tube_light_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tube_light_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="tube_light_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="tube_light_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="tube_light_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="tube_light_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="tube_light_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tube_light_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tube_light_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tube_light_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tube_light_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tube_light_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="tube_light_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="tube_light_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="tube_light.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="tube_light_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="tube_light.rbt"/>
+  <File Type="BITSTR-NKY" Name="tube_light.nky"/>
+  <File Type="BG-DRC" Name="tube_light.drc"/>
+  <File Type="RDI-RDI" Name="tube_light.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/tube_light.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tube_light"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/new/con_tube_light.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/con_tube_light.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

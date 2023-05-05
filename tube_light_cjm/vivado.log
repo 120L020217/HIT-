@@ -1,0 +1,459 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 12 17:43:42 2021
+# Process ID: 4224
+# Current directory: D:/Vivado/2018.3/myworkplace/tube_light_cjm
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14844 D:\Vivado\2018.3\myworkplace\tube_light_cjm\tube_light_cjm.xpr
+# Log file: D:/Vivado/2018.3/myworkplace/tube_light_cjm/vivado.log
+# Journal file: D:/Vivado/2018.3/myworkplace/tube_light_cjm\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado/2018.3/myworkplace/tube_light_cjm/tube_light_cjm.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 841.566 ; gain = 198.059
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/Vivado/2018.3/myworkplace/tube_light_cjm/tube_light_cjm.runs/impl_1/tube_light.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7a35t_0] -mem_dev [lindex [get_cfgmem_parts {n25q64-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Vivado/2018.3/myworkplace/tube_light_cjm/tube_light_cjm.runs/impl_1/tube_light.bin} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+open_project D:/Vivado/2018.3/myworkplace/JK_cjm/JK_cjm.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1910.012 ; gain = 9.746
+current_project tube_light_cjm
+close_project
+update_compile_order -fileset sources_1
+close_project
+create_project project_1 D:/Vivado/2018.3/myworkplace/project_1 -part xc7a35tcsg324-3
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1923.520 ; gain = 6.199
+file mkdir D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new
+close [ open D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v w ]
+add_files D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v
+update_compile_order -fileset sources_1
+close [ open D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/jk_cjm.v w ]
+add_files D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/jk_cjm.v
+update_compile_order -fileset sources_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/jk_cjm.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+file mkdir D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_mod12_cnt.v w ]
+add_files -fileset sim_1 D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_mod12_cnt.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_jk.v w ]
+add_files -fileset sim_1 D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_jk.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_jk.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_jk.v
+file delete -force D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_jk.v
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/2018.3/myworkplace/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_mod12_cnt' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/2018.3/myworkplace/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_mod12_cnt_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/jk_cjm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jk_cjm
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/jk_cjm.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod12_cnt_cjm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sim_1/new/sim_mod12_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_mod12_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/2018.3/myworkplace/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto dd2d14bbf7384613a4e9dbb0b09af6ac --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_mod12_cnt_behav xil_defaultlib.sim_mod12_cnt xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'j' [D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v:29]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'set' [D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v:30]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'set' [D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v:31]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'set' [D:/Vivado/2018.3/myworkplace/project_1/project_1.srcs/sources_1/new/mod12_cnt_cjm.v:32]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.jk_cjm
+Compiling module xil_defaultlib.mod12_cnt_cjm
+Compiling module xil_defaultlib.sim_mod12_cnt
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_mod12_cnt_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/2018.3/myworkplace/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/sim_mod12_cnt_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov 12 19:51:12 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2019.152 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/2018.3/myworkplace/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_mod12_cnt_behav -key {Behavioral:sim_1:Functional:sim_mod12_cnt} -tclbatch {sim_mod12_cnt.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_mod12_cnt.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2035.223 ; gain = 16.070
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_mod12_cnt_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 2035.223 ; gain = 16.070
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2036.898 ; gain = 0.000
+close_project
+create_project jk_cjm D:/Vivado/2018.3/myworkplace/jk_cjm -part xc7a35tcsg324-3
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2036.898 ; gain = 0.000
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+file mkdir D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new
+close [ open D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v w ]
+add_files D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-3
+Top: jk_cjm
+WARNING: [Synth 8-2611] redeclaration of ansi port q is not allowed [D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v:31]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2075.836 ; gain = 38.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'jk_cjm' [D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'jk_cjm' (1#1) [D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2115.750 ; gain = 78.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2115.750 ; gain = 78.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2115.750 ; gain = 78.852
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2404.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 2516.215 ; gain = 479.316
+6 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 2516.215 ; gain = 479.316
+file mkdir D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sim_1/new/sim_jk.v w ]
+add_files -fileset sim_1 D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sim_1/new/sim_jk.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_jk' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_jk_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jk_cjm
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sim_1/new/sim_jk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_jk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 400a569a59b4400f8e1336febda14e8e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_jk_behav xil_defaultlib.sim_jk xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.jk_cjm
+Compiling module xil_defaultlib.sim_jk
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_jk_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim/xsim.dir/sim_jk_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 83.062 ; gain = 0.418
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov 12 20:16:29 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2517.344 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_jk_behav -key {Behavioral:sim_1:Functional:sim_jk} -tclbatch {sim_jk.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_jk.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2517.344 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_jk_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 2517.344 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2571.402 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_jk' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_jk_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jk_cjm
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sim_1/new/sim_jk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_jk
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 400a569a59b4400f8e1336febda14e8e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_jk_behav xil_defaultlib.sim_jk xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.jk_cjm
+Compiling module xil_defaultlib.sim_jk
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_jk_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_jk_behav -key {Behavioral:sim_1:Functional:sim_jk} -tclbatch {sim_jk.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_jk.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2571.402 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_jk_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 2571.402 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_jk' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_jk_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jk_cjm
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sim_1/new/sim_jk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_jk
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 400a569a59b4400f8e1336febda14e8e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_jk_behav xil_defaultlib.sim_jk xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.jk_cjm
+Compiling module xil_defaultlib.sim_jk
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_jk_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_jk_behav -key {Behavioral:sim_1:Functional:sim_jk} -tclbatch {sim_jk.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_jk.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2573.078 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_jk_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2573.078 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_jk' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_jk_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jk_cjm
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sources_1/new/jk_cjm.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.srcs/sim_1/new/sim_jk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_jk
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 400a569a59b4400f8e1336febda14e8e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_jk_behav xil_defaultlib.sim_jk xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.jk_cjm
+Compiling module xil_defaultlib.sim_jk
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_jk_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Vivado/2018.3/myworkplace/jk_cjm/jk_cjm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_jk_behav -key {Behavioral:sim_1:Functional:sim_jk} -tclbatch {sim_jk.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source sim_jk.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2574.059 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_jk_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2574.059 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 12 21:16:53 2021...

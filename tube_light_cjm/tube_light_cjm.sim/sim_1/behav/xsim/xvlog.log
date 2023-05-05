@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/tube_light_cjm/tube_light_cjm.srcs/sources_1/new/tube_light.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tube_light
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/2018.3/myworkplace/tube_light_cjm/tube_light_cjm.srcs/sim_1/new/sim_tube_light.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_tube_light

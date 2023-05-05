@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../tube_light_cjm.srcs/sources_1/new/tube_light.v" \
+"../../../../tube_light_cjm.srcs/sim_1/new/sim_tube_light.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
